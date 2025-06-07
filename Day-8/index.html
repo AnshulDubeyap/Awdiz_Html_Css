@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Anshul's Resume - Day 6 Assignment</title>
-    <!-- Google Font: Poppins -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <title>Styled Box</title>
     <style>
-      body {
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 0;
-        font-family: "Poppins", sans-serif;
+      .custom-box {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        margin: 40px auto;
+        border: 3px dashed #e74c3c;
+        box-sizing: border-box;
+        font-size: larger;
         text-align: center;
       }
-      h1 {
-        color: #1abc9c;
+
+      .box1 {
+        width: 80%;
+        height: 100px;
+        padding: 30px;
+        margin: 20px auto;
+        border: 2px solid #3498db;
+        box-sizing: content-box;
+        background-color: #ecf0f1;
+        font-size: larger;
+        text-align: center;
       }
-      p {
-        font-size: 18px;
-        line-height: 1.6;
-        color: rgba(0, 0, 0, 0.7);
+
+      .box2 {
+        width: 80%;
+        height: 100px;
+        padding: 15px;
+        margin: 30px auto;
+        border: 4px dotted #2ecc71;
+        box-sizing: border-box;
+        background-color: #fdfefe;
+        font-size: larger;
+        text-align: center;
       }
-      a {
-        color: blue;
-        text-decoration: none;
+
+      .box3 {
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        margin: 25px auto;
+        border: 5px double #9b59b6;
+        box-sizing: content-box;
+        background-color: #fdfefe;
+        font-size: larger;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Html and Css</h1>
-    <p>
-      HTML (HyperText Markup Language) provides the structure and content of a
-      webpage. It defines elements like headings, paragraphs, links, images, and
-      layout containers. Think of it as the skeleton of the webpage. CSS
-      (Cascading Style Sheets) controls the appearance and styling of the HTML
-      content. It defines colors, fonts, spacing, alignment, layout, and
-      responsiveness. CSS transforms the raw structure provided by HTML into a
-      visually appealing and user-friendly design
-    </p>
-    <p>
-      Visit <a href="https://github.com/AnshulDubeyap">this link</a> for more
-      info
-    </p>
+    <div style="text-align: center">
+      <h1>Anshul's Assignment</h1>
+    </div>
+    <div class="custom-box">Assignment - 1</div>
+
+    <div class="box1">Box 1</div>
+
+    <div class="box2">Box 2</div>
+
+    <div class="box3">Box 3</div>
   </body>
 </html>
