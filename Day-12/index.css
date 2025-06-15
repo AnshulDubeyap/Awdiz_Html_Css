@@ -7,7 +7,6 @@
   font-family: "Noto Sans", sans-serif;
 }
 .navbar {
-  margin: 10px;
   display: flex;
   height: 80px;
   align-items: center;
@@ -19,6 +18,8 @@
 .logo {
   padding: 2px;
   cursor: pointer;
+
+  width: 150px;
 }
 
 .logo-text {
@@ -65,7 +66,7 @@
 
 .search-bar {
   display: flex;
-  border: 1px solid #000000;
+
   padding: 10px;
   border-radius: 12px;
   width: 150px;
@@ -98,12 +99,17 @@
   font-weight: 10;
 }
 
+.container {
+  width: 100%;
+}
+
 .main {
   background-image: url("./images/Hero.jpg");
   height: 650px;
   width: 91%;
   margin: auto;
   background-size: cover;
+  background-position: center;
   border-radius: 20px;
   display: flex;
 }
@@ -199,29 +205,45 @@
   text-align: center;
 }
 
+.search-icon {
+  display: none;
+}
+
+.main-card-bottom {
+  display: none;
+}
+
 @media (max-width: 780px) and (min-width: 320px) {
+  .logo {
+    width: 300px;
+  }
   .navbar-content {
     display: none;
+  }
+
+  .section-heading {
+    width: 100%;
+  }
+  .main-heading {
+    font-size: 52px;
+  }
+  .main-subheading {
+    font-size: 15px;
   }
 
   .user-icon {
     display: none;
   }
-
+  .search-icon {
+    display: block;
+  }
   .search-bar {
     display: none;
   }
-
-  .main {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .main-heading {
-    font-size: 50px;
-  }
-
   .main-card {
     display: none;
+  }
+  .main-card-bottom {
+    display: block;
   }
 }
