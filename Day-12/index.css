@@ -66,7 +66,7 @@
 
 .search-bar {
   display: flex;
-
+  border: 1px solid #000000;
   padding: 10px;
   border-radius: 12px;
   width: 150px;
@@ -115,7 +115,7 @@
 }
 
 .main-heading {
-  font-size: 80px;
+  font-size: 76px;
   font-weight: 700;
   padding: 20px;
 }
@@ -213,6 +213,10 @@
   display: none;
 }
 
+.hamburger-icon {
+  display: none;
+}
+
 .main-card-bottom {
   display: none;
   margin: 0 auto;
@@ -256,6 +260,84 @@
   text-decoration: underline;
 }
 
+.products {
+  width: 100%;
+  padding: 60px;
+  border: 1px solid black;
+}
+
+.products-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.products-title {
+  font-size: 29px;
+  font-weight: 350;
+}
+.products-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.products-cards {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.product-card-tag {
+  background-color: #ffffff;
+  color: #1570c3;
+  padding: 5px;
+  border-radius: 30px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-tag-text {
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.products-card {
+  border: 1px solid black;
+}
+
+.products-card-image {
+  background-image: url("./images/c837a6_96481ea655134a6789d7fdc909b280d2~mv2.jpg");
+  height: 310px;
+  width: 310px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.product-card-price span {
+  text-decoration: line-through;
+  color: #1570c3;
+}
+
+.product-card-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.product-card-price {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+}
 @media (max-width: 780px) and (min-width: 320px) {
   .logo {
     width: 300px;
@@ -277,6 +359,9 @@
   .user-icon {
     display: none;
   }
+  .hamburger-icon {
+    display: block;
+  }
   .search-icon {
     display: block;
   }
@@ -288,5 +373,13 @@
   }
   .main-card-bottom {
     display: block;
+  }
+
+  .products {
+    padding: 10px;
+  }
+
+  .products-title {
+    font-size: 24px;
   }
 }
