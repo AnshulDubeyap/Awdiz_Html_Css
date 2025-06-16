@@ -189,6 +189,10 @@
   font-weight: 600;
   width: 30%;
 }
+.main-card-button:hover {
+  background-color: #0f5a8c;
+  text-decoration: underline;
+}
 
 .main-card-tag {
   background-color: #1570c3;
@@ -196,7 +200,7 @@
   padding: 5px;
   border-radius: 30px;
   font-weight: 300;
-  width: 80px;
+  width: 50px;
 }
 
 .main-card-tag p {
@@ -211,6 +215,45 @@
 
 .main-card-bottom {
   display: none;
+  margin: 0 auto;
+  width: 90%;
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.main-card-bottom-content {
+  margin-top: 20px;
+  width: 90%;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.main-card-bottom-image {
+  background-image: url("./images/card.jpg");
+  height: 300px;
+  width: 95%;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.main-card-bottom-button {
+  background-color: #1570c3;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+}
+.main-card-bottom-button:hover {
+  background-color: #0f5a8c;
+  text-decoration: underline;
 }
 
 @media (max-width: 780px) and (min-width: 320px) {
