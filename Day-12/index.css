@@ -30,7 +30,7 @@
 
 .logo-text-secondary {
   font-size: 30px;
-  font-weight: 20;
+  font-weight: 250;
 }
 
 .navbar-content {
@@ -363,11 +363,12 @@
   display: flex;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .kids-description {
   height: 720px;
-  width: 50%;
+  width: 40%;
   align-items: center;
   padding: 18% 0;
 }
